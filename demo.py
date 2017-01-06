@@ -17,7 +17,6 @@ try:
     phtml = '.*index.html">.*</a>.*'
     menu = re.findall(phtml, html)
     # menuEncode = chardet.detect(menu).get("encoding","utf-8")
-    # print menuEncode
     menu = menu.encode('utf-8')
     print '%s' % menu
 except urllib2.URLError, e:
